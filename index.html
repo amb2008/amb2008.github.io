@@ -27,6 +27,7 @@
 			width: 100%;
 			height: 800px;
 			position: absolute;
+			z-index: 0;
 		}
 
 		#first-page{
@@ -44,6 +45,20 @@
 
 		}
 
+		#circle{
+			border-radius: 50%;
+			background-color: darkred;
+			height: 200px;
+			width: 200px;
+			z-index: 2;
+			left: 500px;
+		}
+
+		#circle:hover{
+			transition: 2s;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
 	</style>
 
 </head>
@@ -51,11 +66,13 @@
 
 	<div id="menu">
 		<br>
-		<a href="https://www.amazon.com/">Projects</a>
+		<a href="https://www.amazon.com/" style="color: white;">Projects</a>
 		<br>
 		<br>
 		<br>
-		<a href="file:///Users/c26ab1/Desktop/amb2008.github.io/journal.html">Journal</a>
+		<a href="file:///Users/c26ab1/Desktop/amb2008.github.io/journal.html" style="color: white;">Journal</a>
+
+	<div id="circle"></div>
 
 	</div>
 
