@@ -14,7 +14,7 @@
 			position: fixed;
 			font-size: 40px;
 			top: 0%;
-			z-index: 1;
+			z-index: 1; 
 		}
 
 		body{
@@ -22,7 +22,7 @@
 		}
 
 		section{
-			background-color: dodgerblue;
+			background-color: white;
 			opacity: 0.7;
 			width: 100%;
 			height: 800px;
@@ -38,25 +38,73 @@
 			top: 800px;
 		}
 
-		#text-box{
-			width: 80%;
-			position: relative;
-			left: 20%;
-
-		}
-
-		#circle{
-			border-radius: 50%;
-			background-color: darkred;
-			height: 200px;
-			width: 200px;
+		#desk{
+			width: 2672px;
+			height: 2672px;
+			transform: scale3d(0.25, 0.25, 0.25);
+			position: absolute;
+			left: -430px;
+			top: -870px;
+			background-image: url(https://a.1stdibscdn.com/ronan-erwan-bouroullec-for-hay-copenhague-cph-90-writing-desk-for-sale/1121189/f_155495011563797260608/15549501_master.jpg);			
 			z-index: 2;
-			left: 500px;
+
 		}
 
-		#circle:hover{
-			transition: 2s;
-			transform: scale3d(0.5, 0.5, 0.5);
+		#computer{
+			width: 678px;
+			height: 403px;
+			position: absolute;
+			left: 550px;
+			top: 16px;
+			background-image: url(https://images.anandtech.com/doci/14506/XPS-15_front-view-of-display-678_678x452.jpg);
+			z-index: 7;
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+
+		#notebook{
+			width: 590px;
+			height: 800px;
+			background-image: url(https://ecdn.teacherspayteachers.com/thumbitem/Notebook-Paper-Template-Can-be-typed-on--4813937-1566511740/original-4813937-1.jpg);
+			position: absolute;
+			transform: scale3d(0.3, 0.3, 0.3);
+			left: 450px;
+			top: -80px;
+			z-index: 7;
+			background-repeat: no-repeat;
+		}
+
+		#textbook{
+			width: 300px;
+			height: 400px;
+			background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d956a9535623.560d54bc60e21.jpg);
+			position: absolute;
+			left: 930px;
+			top: 65px;
+			z-index: 5;
+			transform: scale3d(0.3, 0.3, 0.3);
+		}
+
+		#sneakers{
+			width: 1200px;
+			height: 1200px;
+			background-image: url(https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1656533145-cushioned-running-shoes-7-1656533135.jpg);
+			position: absolute;
+			left: 450px;
+			height: 1200px;
+			z-index: 6;
+			transform: scale3d(0.1, 0.1, 0.1);
+		}
+
+		#cookie{
+			width: 1120px;
+			height: 742px;
+			background-image: url(https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20homydesign,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1451212752/b99q2ztzlbs37nkfmlhu.jpg);
+			position: absolute;
+			left: 300px;
+			top: 0px;
+			z-index: 8;
+			transform: scale3d(0.08, 0.08, 0.08);
+			cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 		}
 
 	</style>
@@ -64,19 +112,28 @@
 </head>
 <body>
 
-	<div id="menu">
-		<br>
-		<a href="https://www.amazon.com/" style="color: white;">Projects</a>
-		<br>
-		<br>
-		<br>
-		<a href="file:///Users/c26ab1/Desktop/amb2008.github.io/journal.html" style="color: white;">Journal</a>
+	<div id="cookie"></div>
 
-	<div id="circle"></div>
+	<a href="file:///Users/c26ab1/Desktop/amb2008.github.io/journal.html">
+		<div id="notebook"></div>
+	</a>
+
+	<a href="https://dalton.myschoolapp.com/app/student#studentmyday/assignment-center">
+		<div id="textbook"></div>
+	</a>
+
+	<a href="https://dalton.myschoolapp.com/app/student#athleticteam/112743358/teampage">
+		<div id="sneakers"></div>
+	</a>
+
+	<div id="desk"></div>
+
+	<a href="https://mojopi.github.io/cs1/">
+		<div id="computer"></div>
+	</a>
+
 
 	</div>
-
-	<div id="text-box"><p style="font-size: 80px; color: purple;">Hello World!</p></div>
 
 	<section id="first-page">
 		
