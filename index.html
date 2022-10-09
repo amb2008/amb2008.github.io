@@ -3,22 +3,39 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Alex's Site</title>
 
 	<style type="text/css">
-		
 		#menu{
-			height: 850px;
-			width: 20%;
+			height: 80px;
+			width: 100%;
 			background-color: darkblue;
 			position: fixed;
-			font-size: 40px;
 			top: 0%;
-			z-index: 1; 
+			z-index: 1;
+			padding-top: 20px;
+			opacity: 0.5;
+		}
+
+		.button{
+			display: inline-block;
+			color: white;
+			font-size: 40px;
+			font-family: courier;
+			height: 100%;
+			width: 30%;
+			text-align: center;
+			transition: 2s;
+		}
+
+		.button:hover{
+			transform: scale(1.25);
+			transition: 2s;
 		}
 
 		body{
 			margin: 0;
+			overflow-x: hidden;
 		}
 
 		section{
@@ -31,118 +48,114 @@
 		}
 
 		#first-page{
-			top: 0%;
+			top: 800px;
+			position: absolute;
 		}
 
 		#second-page{
-			top: 800px;
+			top: 1600px;
+			position: absolute;
 		}
 
-		#desk{
-			width: 2672px;
-			height: 2672px;
-			transform: scale3d(0.25, 0.25, 0.25);
+		#gif{
+			background-image: url(https://i.pinimg.com/originals/52/a5/4d/52a54dbb974b3ab8148b259115663dd1.gif);
+			height: 600px;
+			width: 100%;
 			position: absolute;
-			left: -430px;
-			top: -870px;
-			background-image: url(https://a.1stdibscdn.com/ronan-erwan-bouroullec-for-hay-copenhague-cph-90-writing-desk-for-sale/1121189/f_155495011563797260608/15549501_master.jpg);			
+			transform: scale(1.75);
+
+		}
+
+		#explorebox{
+			height: 150px;
+			width: 400px;
+			background-color: blue;
+			opacity: 0.5;
+			position: absolute;
+			top: 380px;
+			left: 525px;
 			z-index: 2;
 
 		}
 
-		#computer{
-			width: 678px;
-			height: 403px;
-			position: absolute;
-			left: 550px;
-			top: 16px;
-			background-image: url(https://images.anandtech.com/doci/14506/XPS-15_front-view-of-display-678_678x452.jpg);
-			z-index: 7;
-			transform: scale3d(0.3, 0.3, 0.3);
+		#explore{
+			font-family: courier;
+			color: white;
+			font-size: 30px;
+			transition: 1s;
+			padding-top: 50px;
 		}
 
-		#notebook{
-			width: 590px;
-			height: 800px;
-			background-image: url(https://ecdn.teacherspayteachers.com/thumbitem/Notebook-Paper-Template-Can-be-typed-on--4813937-1566511740/original-4813937-1.jpg);
-			position: absolute;
-			transform: scale3d(0.3, 0.3, 0.3);
-			left: 450px;
-			top: -80px;
-			z-index: 7;
-			background-repeat: no-repeat;
+		#explore:hover{
+			transform: scale(1.25);
+			transition: 1s;
 		}
 
-		#textbook{
-			width: 300px;
-			height: 400px;
-			background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d956a9535623.560d54bc60e21.jpg);
-			position: absolute;
-			left: 930px;
-			top: 65px;
-			z-index: 5;
-			transform: scale3d(0.3, 0.3, 0.3);
-		}
-
-		#sneakers{
-			width: 1200px;
-			height: 1200px;
-			background-image: url(https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1656533145-cushioned-running-shoes-7-1656533135.jpg);
-			position: absolute;
-			left: 450px;
-			height: 1200px;
-			z-index: 6;
-			transform: scale3d(0.1, 0.1, 0.1);
-		}
-
-		#cookie{
-			width: 1120px;
-			height: 742px;
-			background-image: url(https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20homydesign,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1451212752/b99q2ztzlbs37nkfmlhu.jpg);
-			position: absolute;
-			left: 300px;
-			top: 0px;
+		.fpdivs{
+			width: 200px;
+			height: 200px;
+			display: inline-block;	
+			background-color: white;
 			z-index: 8;
-			transform: scale3d(0.08, 0.08, 0.08);
-			cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+			border-spacing: 5px;
+			transition: 5s;
+		}
+
+		.fpdivs:hover{
+			background-color: blue;
+			opacity: 0.5;
+			transition: 1s;
 		}
 
 	</style>
 
 </head>
 <body>
-
-	<div id="cookie"></div>
-
-	<a href="file:///Users/c26ab1/Desktop/amb2008.github.io/journal.html">
-		<div id="notebook"></div>
-	</a>
-
-	<a href="https://dalton.myschoolapp.com/app/student#studentmyday/assignment-center">
-		<div id="textbook"></div>
-	</a>
-
-	<a href="https://dalton.myschoolapp.com/app/student#athleticteam/112743358/teampage">
-		<div id="sneakers"></div>
-	</a>
-
-	<div id="desk"></div>
-
-	<a href="https://mojopi.github.io/cs1/">
-		<div id="computer"></div>
-	</a>
-
-
+	<div id="menu">
+		<a href="projects.html">
+			<div class="button">projects</div> 
+		</a>
+		<a href="journal.html">
+			<div class="button">journal</div>
+		</a>
+		<a href="aboutme.html">
+			<div class="button">about me</div>
+		</a>
 	</div>
 
+	<a href="#first-page">
+		<div id="explorebox">
+			<center><div id="explore">explore</div></center>
+		</div>
+	</a>
+
+
 	<section id="first-page">
-		
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
+		<div class="fpdivs"></div>
 	</section>
 
-	<section id="second-page">
-		
-	</section>
+	<section id="second-page"></section>
 
-
+	<div id="gif"></div>
 </body>
 </html>
