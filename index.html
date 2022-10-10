@@ -66,24 +66,38 @@
 
 		}
 
-		#explorebox{
-			height: 150px;
-			width: 400px;
-			background-color: blue;
+		#gif:hover{
+			opacity: 1;
+		}
+
+		#gif:hover #explorebox{
 			opacity: 0.5;
+			transition: 2.5s;
+			transform: scaleY(1.0);
+			top: 362px;
+		}
+
+		#explorebox{
+			height: 60px;
+			width: 140px;
+			background-color: blue;
+			opacity: 0;
 			position: absolute;
-			top: 380px;
-			left: 525px;
+			top: 600px;
+			left: 640px;
 			z-index: 2;
+			transition: 1000s;
+			transform: scaleY(0.02);
+			transition: ;
 
 		}
 
 		#explore{
 			font-family: courier;
 			color: white;
-			font-size: 30px;
+			font-size: 20px;
 			transition: 1s;
-			padding-top: 50px;
+			padding-top: 16px;
 		}
 
 		#explore:hover{
@@ -111,6 +125,7 @@
 
 </head>
 <body>
+
 	<div id="menu">
 		<a href="projects.html">
 			<div class="button">projects</div> 
@@ -122,12 +137,13 @@
 			<div class="button">about me</div>
 		</a>
 	</div>
-
-	<a href="#first-page">
-		<div id="explorebox">
-			<center><div id="explore">explore</div></center>
-		</div>
-	</a>
+	<div id="gif">
+		<a href="#first-page">
+			<div id="explorebox">
+				<center><div id="explore">explore</div></center>
+			</div>
+		</a>
+	</div>
 
 
 	<section id="first-page">
@@ -155,7 +171,5 @@
 	</section>
 
 	<section id="second-page"></section>
-
-	<div id="gif"></div>
 </body>
 </html>
