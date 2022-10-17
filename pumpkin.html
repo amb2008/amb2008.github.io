@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pumpkin</title>
+
+	<style type="text/css">
+		
+		#Pumpkin{
+			width: 94%;
+			height: 700px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPel1qKLv5ARPk5TaDmjnqonL2YIIVy5K1fJI5F8UWdwOJ3beAcJ_H1bFh8Lnafy7FSS8&usqp=CAU);
+		}
+
+		#Pumpkin2{
+			width: 250px;
+			height: 250px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPel1qKLv5ARPk5TaDmjnqonL2YIIVy5K1fJI5F8UWdwOJ3beAcJ_H1bFh8Lnafy7FSS8&usqp=CAU);
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			transition: 2s;
+		}
+
+		#Pumpkin2:hover{
+			transform: scale(1.25);
+			position: absolute;
+			transition: 2s;
+		}
+
+		#ghost{
+			width: 312px;
+			height: 360px;
+			position: absolute;
+			transform: scale3d(0.6, 0.5, 1.0);
+			left: 190px;
+			top: 400px;
+			opacity: 0;
+			background-image: url(https://t4.ftcdn.net/jpg/02/80/68/53/360_F_280685307_3s3vHQUoOub6AQchDg2mzHCpBDYhj6jd.jpg);
+			transition: 2s;
+		}
+
+		#ghost:hover{
+			opacity: 1;
+			transition: 2s;
+		}
+
+		#bat{
+			width: 450px;
+			height: 300px;
+			position: absolute;
+			left: 350px;
+			transform: scale(0.5);
+			top: 180px;
+			opacity: 0;
+			background-image: url(https://t3.ftcdn.net/jpg/03/30/51/58/360_F_330515881_Yz5vitlf5GW67Vik4v0IvbWMKplOlOoA.jpg);
+			transition: 2s;
+		}
+
+		#bat:hover{
+			opacity: 1;
+			transition: 2s;
+		}
+
+		#witch{
+			width: 220px;
+			height: 200px;
+			position: absolute;
+			left: 700px;
+			top: 250px;
+			opacity: 0;
+			transition: 2s;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6C-rbqexkRUQgKBgu-jpJwfWyF0-N_v3Rg&usqp=CAU);
+		}
+
+		#witch:hover{
+			opacity: 1;
+			transition: 2s;
+		}
+
+		#corn{
+			width: 250px;
+			height: 250px;
+			position: absolute;
+			left: 900px;
+			transform: scale(0.8);
+			background-repeat: no-repeat;
+			top: 0px;
+			opacity: 0;
+			transition: 2s;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGZ8lFM1o6okMKBhdEJPnBnaOPfDMmQhOuTu-a1UsSTLALX-u5azRBt48fZzfa1OjtuI&usqp=CAU);
+		}
+
+		#corn:hover{
+			opacity: 1;
+			transition: 2s;
+		}
+
+		#vampire{
+			width: 300px;
+			height: 250px;
+			position: absolute;
+			left: 1130px;
+			top: 440px;
+			transform: scale(1);
+			background-repeat: no-repeat;
+			transition: 2s;
+			opacity: 0;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeHaPf8fMpp5VCAb56M5NM7sYvRvfqZWLfQrKIDaEc3pD2aQ_quuuasMD08b3hNk_tN0&usqp=CAU);
+		}
+
+		#vampire:hover{
+			opacity: 1;
+			transition: 2s;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="Pumpkin"></div>
+	<div id="Pumpkin2"></div>
+	<div id="ghost"></div>
+	<div id="bat"></div>
+	<div id="witch"></div>
+	<div id="corn"></div>
+	<div id="vampire"></div>
+</body>
+</html>
