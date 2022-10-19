@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#snoo{
+			width: 636px;
+			height: 636px;
+			transform: scale(0.4);
+			background-image: url(https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/849430-center-3);
+			background-image: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="snoo"></div>
+
+	<script type="text/javascript">
+		console.log()
+		document.addEventListener(
+			"click", function(event){
+				console.log(event.clientX, event.clientY)
+				
+				snoo.style.left = event.clientX + - 360 +"px";
+				snoo.style.top = event.clientY + - 340 +"px";
+				}
+				)
+	</script>
+
+</body>
+</html>
