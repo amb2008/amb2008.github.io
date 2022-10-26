@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#scoreboard1{
+			font-size: 100px;
+			border:5px solid black;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+
+		#scoreboard2{
+			font-size: 100px;
+			border:5px solid black;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 800px;
+		}
+
+		#click1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			top: 300px;
+		}
+
+		#click2{
+			width: 200px;
+			height: 200px;
+			left: 800px;
+			top: 300px;
+			position: absolute;
+			background-color: blue;
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="scoreboard1"></div>
+	<div id="click1">
+		<script type="text/javascript">
+			
+			let score = 0;
+			let scoreboard = document.getElementById('scoreboard1')
+
+			document.addEventListener(
+				"click", function (event) {
+				score=score+1
+				console.log(score)
+				scoreboard1.innerText = score;
+			}
+			)
+
+		</script>
+	</div>
+
+	<div id="scoreboard2"></div>
+	<div id="click2">
+		
+		<script type="text/javascript">
+			
+			let score2 = 0;
+			let scoreboard = document.getElementById('scoreboard2')
+
+			document.addEventListener(
+				"click", function (event) {
+				score2=score2+1
+				console.log(score2)
+				scoreboard2.innerText = score2;
+			}
+			)
+
+		</script>
+
+	</div>
+
+</body>
+</html>

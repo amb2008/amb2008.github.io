@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript">
+    
+        window.addEventListener( 'load', function() {
+      var box = document.getElementById('box'),
+          docHeight = document.documentElement.offsetHeight;
+      
+      window.addEventListener( 'scroll', function() {
+            // normalize scroll position as percentage
+        var scrolled = window.scrollY / ( docHeight - window.innerHeight ),
+            transformValue = 'scale('+scrolled+')';
+     
+        box.style.transform = transformValue;
+        
+      }, false);
+      
+    }, false);
+
+  </script>
+
+  <style type="text/css">
+    
+      body {
+        height: 2000px;
+      }
+
+      #container {
+        width: 200px;
+        height: 200px;  
+        border: 2px solid;
+        position: fixed;
+      }
+
+      #box {
+        width: 100%;
+        height: 100%;
+        background: red;
+      }
+
+      #see{
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        top:300px;
+        background-color: blue;
+      }
+  </style>
+
+  <title></title>
+</head>
+<body>
+
+  <div id="container">
+    <div id="box"></div>
+  </div>
+  <div id="see"></div>
+
+</body>
+</html>
