@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		.pig{
+			color: white;
+			display: inline-block;
+			width: 200px;
+			height: 150px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGmzpR4Qt9AovcWWt9qpDVFgnADf7gb2l5Q&usqp=CAU);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		body{
+			height: 300px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		var number = 0;
+		function makePig(){
+			number = number+1;
+
+			var piglet = document.createElement("div");
+
+			piglet.innerText = number;
+			document.body.appendChild(piglet);
+			piglet.classList.add('pig');
+		}
+
+		setInterval(makePig, 100)
+	</script>
+
+</body>
+</html>

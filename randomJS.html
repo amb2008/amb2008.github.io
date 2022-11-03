@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+
+ 	<script type="text/javascript">
+ 		//prompt
+		var name = prompt("What's your name?");
+		console.log("Hello " + name)
+	</script>
+
+	<script type="text/javascript">
+		//function on confirm
+		var likesCats = confirm("Do you like cats?");
+		if (likesCats) {
+			console.log("You're a cool cat!");
+		} else{
+			console.log("I don't like cats either");
+		}
+	</script>
+
+	<script type="text/javascript">
+		//alert
+		alert("JavaScript is awesome!");
+	</script>
+
+	<script type="text/javascript">
+		//object
+		var dog = {};
+			dog.name = "pancake";
+			dog.legs = 4;
+			dog.isAwesome = true;
+
+		//access in console with: dog.legs or dog.name
+	</script>
+
+	<script type="text/javascript">
+		// array
+		var horse = [
+		"stallion", "mustang", "pony", "unicorn"
+		]
+
+		//access in console with: horse[1]; (horse[x];)
+	</script>
+
+	<script type="text/javascript">
+		//array + objects
+		var dinosaurs = [
+		{name: "Tyrannosaurus Rex", period: "Late Cretaceous"},
+		{name: "Stegosaurus", period: "Late Jurrasic"},
+		{name: "Plateosaurus", period: "Triassic"}
+		];
+
+		//access in console with: dinosaur[1];
+	</script>
+
+	<script type="text/javascript">
+		//more complex array + object
+		var anna = {name: "Anna", age:11, luckyNumbers: [2, 4, 8, 16]};
+		var dave = {name: "Dave", age: 5, luckyNumbers: [3, 9, 40]};
+		var kate = {name: "Kate", age: 9, luckyNumbers: [1, 2, 3]};
+		var friends = [anna, dave, kate]
+		//access in console with: friends[0]; or friends[1].name
+	</script>
+
+	<script type="text/javascript">
+		//basic condition function
+		var name = "Nicholas";
+		console.log("Hello " + name);
+		if (name.length > 7) {
+			console.log("Wow, you have a really long name")
+		}
+	</script>
+
+	<script type="text/javascript">
+		//basic if else
+		var lemonChicken = false;
+		var beefWithBlackbean = false;
+		var sweetAndSourPork = true;
+
+		if (lemonChicken) {
+			console.log("I'll have the lemon chicken");
+		} else if (beefWithBlackbean) {
+			console.log("I'll have the beef");
+		} else if (sweetAndSourPork) {
+			console.log("I'll have the pork");
+		} else {
+			console.log("What else ya got");
+		}
+	</script>
+
+	<script type="text/javascript">
+		//while loop
+		var sheepCounted = 0;
+		while (sheepCounted < 10) {
+			console.log("I have counted" + sheepCounted "sheep!");
+			sheepCounted++;
+		}
+		console.log(Zzzzzzz)
+	</script>
+
+	<script type="text/javascript">
+		//for loop
+		for (var sheepCounted = 0; sheepCounted < 10; sheepCounted++) {
+			console.log("I have counted " + sheepCounted + " sheep!");
+		}
+		console.log("Zzzzzzz")
+
+		//for loop to do something a number of times
+		var timesToSayHello = 3;
+		for (var i = 0; i < timesToSayHello; i++) {
+			console.log("Hello!");
+		}
+
+		//for loop with arrays and strings, prints each animal in console
+		var animals = ["Lion", "Flamingo", "Polar Bear", "Boa Constrictor"];
+
+		for (var i = 0; i < animals.length; i++) {
+			console.log("This zoo contains a " + animals[i] + ".")
+		}
+
+		//for loop to print all powers of 2 under 10,000
+		for (var x = 2; x < 10000; x = x * 2) {
+			console.log(x);
+		}
+	</script>
+</body>
+</html>
