@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alex's Site</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
 
 	<style type="text/css">
 		
@@ -36,7 +39,7 @@
 		}
 
 		body{
-			margin: 0
+			margin: 0;
 			overflow-x: hidden;
 			cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 		}
@@ -51,13 +54,40 @@
 			z-index: 0;
 		}
 
-		#first-page{
+		#firstpage{
 			top: 800px;
 			position: absolute;
 		}
 
+		#thanks{
+			top: -600px;
+			position: absolute;
+			z-index: 10;
+			font-size: 50px;
+			font-family: courier;
+			color: lightskyblue;
+			left: 150px;
+			transform: scale(0.01);
+			font-family: bungee;
+			text-shadow: 5px 5px blue;
+		}
+
+		#enjoy{
+			top: -200px;
+			position: absolute;
+			z-index: 10;
+			font-size: 50px;
+			font-family: courier;
+			color: lightskyblue;
+			left: 500px;
+			transform: scale(0.01);
+			font-family: bungee;
+			text-shadow: 5px 5px blue;
+		}
+
 		#second-page{
 			top: 1600px;
+			opacity: 0;
 			position: absolute;
 		}
 
@@ -138,22 +168,91 @@
 			transition: 1s;
 		}
 
-		.fpdivs{
+		#mountains{
+			background-image: url(mountains.png);
+			width: 100%;
+			height: 1000px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+			opacity: 0;
+
+		}
+
+		#blue{
+			width: 100%;
+			height: 1000px;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			z-index: 1;
+			background-image: url(blue2.png);
+			opacity: 0;
+		}
+
+		#background{
+			background-image: url("https://i.pinimg.com/736x/a8/fd/33/a8fd33f012f4a5370f8a5b047893480d.jpg");
+			width: 100%;
+			height: 1000px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			opacity: 0;
+			z-index: 0;
+		}
+
+		#crow{
+			background-image: url("crow.png");
+			width: 100%;
+			height: 1000px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: -200px;
+			left: 100px;
+			transform: scale(1.3);
+			z-index: 0;
+			opacity: 0;
+		}
+
+		#wave{
+			background-image: url(wave.png);
 			width: 200px;
-			height: 200px;
-			display: inline-block;	
-			background-color: white;
-			z-index: 8;
-			border-spacing: 5px;
-			transition: 5s;
+			height: 100px;
+			transform: scaleX(5);
+			position: absolute;
+			top: 400px;
+			left: 500px;
+			z-index: 2;
 		}
 
-		.fpdivs:hover{
-			background-color: blue;
-			opacity: 0.5;
-			transition: 0.4s;
+		#waveblock{
+			background-image: url(blue2.png);
+			width: 1000px;
+			height: 100px;
+			position: absolute;
+			top: 400px;
+			left: 100px;
+			z-index: 3;
+
 		}
 
+		#thisis{
+			top: 330px;
+			position: absolute;
+			z-index: 10;
+			font-size: 50px;
+			font-family: courier;
+			color: lightskyblue;
+			left: 200px;
+			font-family: bungee;
+			text-shadow: 5px 5px blue;
+		}
 	
 	</style>
 
@@ -161,7 +260,7 @@
 <body>
 
 	<script type="text/javascript">
-		alert("you've been hacked")
+		alert("welcome!")
 	</script>
 	<div id="menu">
 		<a href="projects.html">
@@ -175,38 +274,96 @@
 		</a>
 	</div>
 	<div id="gif">
-		<a href="#first-page">
+		<a href="#firstpage">
 			<div id="explorebox">
 				<center><div id="explore">explore</div></center>
 			</div>
 		</a>
 	</div>
 
-
-	<section id="first-page">
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
-		<div class="fpdivs"></div>
+	<section id="firstpage">
+		<h1 id="thanks">thanks for scrolling this far</h1>
+		<h1 id="enjoy">now it's time to explore!</h1>
 	</section>
 
 	<section id="second-page"></section>
+
+	<div id="background">
+		<div id="crow"></div>
+	</div>
+
+	<div id="mountains"></div>
+
+	<div id="blue">
+		<div id="wave"></div>
+		<div id="waveblock"></div>
+		<h1 id="thisis">this is my website</h1>
+	</div>
+
+
+	<script type="text/javascript">
+		document.addEventListener("scroll", function(scroll){	
+			console.log(window.pageYOffset);
+
+			if (window.pageYOffset < 900){
+				firstpage.style.transform = "translateY(0)"
+				thanks.style.transform = "scale(0)"
+				thanks.style.transition = "0s"
+				enjoy.style.transform = "scale(0)"
+			}
+			else if(window.pageYOffset < 3000){
+				firstpage.style.transform = "translateY("+ window.pageYOffset + "px)"
+				thanks.style.transform = "scale("+ 1/2500*window.pageYOffset +")"
+				thanks.style.transition = "0s"
+				enjoy.style.transform = "scale(0)"
+
+			} else if(window.pageYOffset < 3200){
+				firstpage.style.transform = "translateY("+ window.pageYOffset + "px)"
+				thanks.style.transform = "scale(0)"
+				thanks.style.transition = "2s"
+				enjoy.style.transform = "scale(0)"
+			} else if(window.pageYOffset < 5000){
+				firstpage.style.transform = "translateY("+ window.pageYOffset + "px)"
+				enjoy.style.transform = "scale("+ 1/5000*window.pageYOffset +")"
+				enjoy.style.transition = "0s"
+				thanks.style.transform = "scale(0)"
+
+			} else if (window.pageYOffset < 5500){
+				background.style.transform = "translateY(5500px)"
+				background.style.opacity = "1"
+			
+			} else if(window.pageYOffset < 6545){
+				blue.style.transform = "translateY(7300px)"
+				blue.style.opacity = "1"
+				mountains.style.transform = "translateY(6500px)"
+				mountains.style.opacity = "1"
+				background.style.transform = "translateY("+ window.pageYOffset + "px)"
+				background.style.opacity = "1"
+				
+			} else if(window.pageYOffset < 9000){
+				crow.style.transform = "translateX("+ window.pageYOffset + "px)"
+				crow.style.transform += "translateX(-7600px)"
+				crow.style.opacity = "1"
+				blue.style.transform = "translateY("+ window.pageYOffset + "px)"
+				blue.style.transform += "translateY(750px)"
+				mountains.style.transform = "translateY("+ window.pageYOffset + "px)"
+				mountains.style.transform += "translateY(-50px)"
+				background.style.transform = "translateY("+ window.pageYOffset + "px)"
+				background.style.opacity = "1"
+
+			} else if(window.pageYOffset < 9815){
+
+			}  else if(window.pageYOffset < 11000){
+				blue.style.transform = "translateY("+ window.pageYOffset + "px)"
+				blue.style.transform += "translateY(-150px)"
+				waveblock.style.transform = "translateX("+ window.pageYOffset + "px)"
+				waveblock.style.transform += "translateX(-9815px)"
+
+			}
+
+		})
+
+	</script>
+
 </body>
 </html>
