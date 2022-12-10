@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+	<style type="text/css">
+		p{
+			font-size: 75px;
+			font-family: poppins;
+		}
+
+		#square{
+			position: absolute;
+			top: -700px;
+			left: -800px;
+			width: 3000px;
+			height: 3000px;
+			background-repeat: no-repeat;
+			transform: scale(0.4);
+			
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<center>
+		
+		<p>Welcome! Click to see da Abby!</p>
+		<div id="square"></div>
+
+
+	</center>
+
+	<script type="text/javascript">
+		
+		var abby = ["abby1.png", "abby2.png", "abby3.png", "abby4.png", "abby5.png", "abby6.png", "abby7.png", "abby8.png", "abby9.png", "abby10.png"];
+
+		document.addEventListener("click", function(){
+			var number = Math.round(Math.random()*9)
+			console.log(number)
+			square.style.backgroundImage = "url("+ abby[number] +")";
+		})
+
+	</script>
+
+</body>
+</html>

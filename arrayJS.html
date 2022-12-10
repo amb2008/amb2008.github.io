@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+	<style type="text/css">
+		#text{
+			font-size: 75px;
+		}
+
+		p{
+			font-size: 75px;
+			font-family: poppins;
+		}
+	</style>
+
+
+</head>
+<body>
+	<center>
+		
+		<p>Welcome! Choose what breakfast to have made for you on Sunday!</p>
+		<div id="text"></div>
+
+	</center>
+
+	<script type="text/javascript">
+		
+		var breakfast = ["waffles", " eggs benedict", " eggs florentine", " breakfast burrito", " pancake", " yogurt", " breakfast sandwhich", " bagel and lox", " french toast", " acai bowls", " bagel with cream cheese", " chocolate chip pancakes", " scrambled eggs"];
+
+		document.addEventListener("click", function(){
+			var number = Math.round(Math.random()*13)
+			console.log(number)
+			text.innerText = breakfast[number];
+		})
+
+	</script>
+
+</body>
+</html>

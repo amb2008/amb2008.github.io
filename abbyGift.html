@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	
+	<style type="text/css">
+
+		body{
+			overflow-x: hidden;
+		}
+
+	</style>
+
+<body>
+
+	<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+    
+    function makeSquare (x) {
+
+    		var x = 0
+            document.addEventListener("click", 
+            function(){
+            	x=x+1
+            
+   				console.log(x)
+
+   				square.style.backgroundImage = "url(abby"+ x + ".png)";
+
+            })
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+
+            square.style.position = "absolute"
+            square.style.left = "500px"
+            square.style.top = "200px"
+            square.style.scale = "2"
+            square.style.width = "400px";
+            square.style.height = "400px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+
+            square.style.backgroundImage = "url(abby"+ x + ".png)";
+
+            square.style.backgroundSize = "contain";
+
+            square.style.id = "square"};
+
+
+   			{ makeSquare();}
+      
+
+</script>
+
+</body>
+</html>
