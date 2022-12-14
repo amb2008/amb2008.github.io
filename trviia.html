@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			overflow-x: hidden;
+			overflow-y: hidden;
+			margin: 0;
+		}
+		
+		.trivia{
+			font-size: 30px;
+			font-family: courier;
+			color: rgb(200, 130, 250);
+			position: absolute;
+		}
+
+		.A{
+			background-color: rgb(200, 130, 250);
+			width: 100%;
+			height: 900px;
+			position: absolute;
+		}
+
+		.a{
+			font-size: 30px;
+			font-family: courier;
+			color: white;
+			position: absolute;
+		}
+
+		#sports{
+			left: 100px;
+			top: 100px;
+			z-index: 2;
+		}
+
+		#sportsA{
+			opacity: 0;
+		}
+
+		#sportQ{
+			left: 500px;
+			top: 100px;
+			z-index: 3;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="sports" class="trivia">sports</div>
+	<div id="sportsA" class="A"></div>
+	<div id="sportsa" class="a">how many teams in the mlb</div>
+
+	<script type="text/javascript">
+		
+		sports.addEventListener("click", 
+			function(){
+				sportsA.style.opacity="1"
+
+			}
+			)
+
+	</script>
+
+</body>
+</html>
